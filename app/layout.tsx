@@ -3,6 +3,7 @@ import { NextIntlClientProvider } from "next-intl";
 import "./globals.css";
 import { cn } from "@/lib/tailwind";
 import { montserrat } from "@/fonts/Montserrat";
+import { Navigation } from "@/components/layout/nav";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,9 +18,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={cn(montserrat.className, montserrat.variable, "antialiased")}
+        className={cn(
+          montserrat.className,
+          montserrat.variable,
+          "flex flex-col items-center antialiased"
+        )}
       >
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider>
+          <Navigation />
+          {children}
+        </NextIntlClientProvider>
       </body>
     </html>
   );
