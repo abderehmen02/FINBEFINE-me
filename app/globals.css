@@ -205,3 +205,13 @@
 .lightShadow {
   box-shadow: 0px 0px 10px 0px #00000026;
 }
+.fourthBoxShaddow {
+  box-shadow: 0px 0px 10px 0px #00000026;
+}
+.secondBoxItemShaddow {
+  box-shadow: 0px 0px 5px 0px #00000026;
+}
+
+.standardShaddow {
+  box-shadow: 0px 0px 10px 0px #00000026;
+}

@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import { Hero } from "./_components/hero";
 import { SecondSection } from "./_components/secondSection";
 import { ThirdSection } from "./_components/thirdSection";
+import { FourthSection } from "./_components/fourthSection";
 
 export default function HomePage() {
   return (
@@ -9,6 +10,7 @@ export default function HomePage() {
       <Hero />
       <SecondSection />
       <ThirdSection />
+      <FourthSection />
     </div>
   );
 }
