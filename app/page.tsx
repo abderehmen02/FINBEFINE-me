@@ -5,6 +5,7 @@ import { ThirdSection } from "./_components/thirdSection";
 import { FourthSection } from "./_components/fourthSection";
 import { FifthSection } from "./_components/fifthSection";
 import { SeventhSection } from "./_components/seventhSection";
+import { EigthSection } from "./_components/eighthSection";
 
 export default function HomePage() {
   return (
@@ -14,7 +15,9 @@ export default function HomePage() {
       <ThirdSection />
       <FourthSection />
       <FifthSection />
+
       <SeventhSection />
+      <EigthSection />
     </div>
   );
 }
