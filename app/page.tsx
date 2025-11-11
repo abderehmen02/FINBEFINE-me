@@ -7,6 +7,8 @@ import { FifthSection } from "./_components/fifthSection";
 import { SeventhSection } from "./_components/seventhSection";
 import { EigthSection } from "./_components/eighthSection";
 import { NinethSection } from "./_components/nenethSection";
+import { TenSection } from "./_components/tenSection";
+import { ElevenSection } from "./_components/elevenSection";
 
 export default function HomePage() {
   return (
@@ -16,10 +18,11 @@ export default function HomePage() {
       <ThirdSection />
       <FourthSection />
       <FifthSection />
-
       <SeventhSection />
       <EigthSection />
       <NinethSection />
+      <TenSection />
+      <ElevenSection />
     </div>
   );
 }
