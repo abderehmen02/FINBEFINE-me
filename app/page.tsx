@@ -9,6 +9,7 @@ import { EigthSection } from "./_components/eighthSection";
 import { NinethSection } from "./_components/nenethSection";
 import { TenSection } from "./_components/tenSection";
 import { ElevenSection } from "./_components/elevenSection";
+import { TwelevSection } from "./_components/twelevSection";
 
 export default function HomePage() {
   return (
@@ -23,6 +24,7 @@ export default function HomePage() {
       <NinethSection />
       <TenSection />
       <ElevenSection />
+      <TwelevSection />
     </div>
   );
 }

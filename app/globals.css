@@ -217,3 +217,11 @@
 .standardShaddow {
   box-shadow: 0px 0px 10px 0px #00000026;
 }
+
+.pinkLinear {
+  background: linear-gradient(
+    180deg,
+    rgba(82, 121, 244, 0.35) 0%,
+    rgba(82, 121, 244, 0.7) 100%
+  );
+}
