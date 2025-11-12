@@ -31,3 +31,60 @@ export const RightArrow = () => {
     </svg>
   );
 };
+
+export const ListArrow = () => {
+  return (
+    <svg
+      width="7"
+      height="7"
+      viewBox="0 0 7 7"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+    >
+      <mask
+        id="mask0_3_44"
+        style={{ maskType: "alpha" }}
+        maskUnits="userSpaceOnUse"
+        x="0"
+        y="0"
+        width="7"
+        height="7"
+      >
+        <rect
+          x="7"
+          width="7"
+          height="7"
+          transform="rotate(90 7 0)"
+          fill="url(#pattern0_3_44)"
+        />
+      </mask>
+      <g mask="url(#mask0_3_44)">
+        <rect
+          x="7"
+          width="7"
+          height="7"
+          transform="rotate(90 7 0)"
+          fill="#111111"
+        />
+      </g>
+      <defs>
+        <pattern
+          id="pattern0_3_44"
+          patternContentUnits="objectBoundingBox"
+          width="1"
+          height="1"
+        >
+          <use xlinkHref="#image0_3_44" transform="scale(0.01)" />
+        </pattern>
+        <image
+          id="image0_3_44"
+          width="100"
+          height="100"
+          preserveAspectRatio="none"
+          xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABvUlEQVR4nO3du0okURRG4d/LmwijmbA3UvPMJgYihvoywiReMFAbgxahTUSxReyzhlofVL7pRZ2qZFcnkiRJP7Dlr8dwmOQ8yWOSRZLTJAejh5pzjPsky3fXbZJp9HBzdP5BjLfrziibtb06pj4LYpQBHr4IsvRO2ayTNYIsjbI5e6sHuFFAKsn1N6L8HT3wHBgFyChARgEyCpBRgIwCVL4S85RReMooPGUUnjIKTxmFp4zCU0bhKaPwlFF4yig8ZRSeMgpPGYWnjMJTRuEpo/CUUXjKKDxlFJ4yCk8ZhaeMwlNG4Smj8JRReMooPNNqQ2udTa7XNbw/oweeg+kbUY5HDzsXtebx9W/0oHPRSW7WCHI1etA5mDyyOCYf6v/fMbX0qxK/zxgg7Z3B0cbgaGNwtDE42hgcbQyONgZHG4OjjcHRxuBoY3C0MTjaGBxtDI42Bkcbg6ONwdHG4GhjcLQxONoYHG0MjjYGRxuDo43BYQwQY4AYA8QYIMYAMQaIMUD2/etVljPXyDh2kizc6ePYTfLsgiXLpduuLEdJHj/5uMvr3rgGRblYHV9PSU790g7nIb89eghJkqT8lhfcmbLovD1dtwAAAABJRU5ErkJggg=="
+        />
+      </defs>
+    </svg>
+  );
+};
