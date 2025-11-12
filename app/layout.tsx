@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/tailwind";
 import { montserrat } from "@/fonts/Montserrat";
 import { Navigation } from "@/components/layout/nav";
+import { Footer } from "@/components/layout/footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -27,6 +28,7 @@ export default function RootLayout({
         <NextIntlClientProvider>
           <Navigation />
           {children}
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

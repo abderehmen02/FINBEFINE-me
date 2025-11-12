@@ -1,4 +1,5 @@
-import { AnalyticsIcon } from "@/icons/analytics";
+"use client";
+import React from "react";
 import {
   CarDoneIcon,
   GraphIcon,
@@ -6,45 +7,51 @@ import {
   MoneyIncomeOutlinedIcon,
   PageIcon,
   TurnIcon,
+  AnalyticsIcon,
+  CarIcon,
+  HandIcon,
 } from "@/icons/homeSecondSectionIcons";
-import { CarIcon, HandIcon } from "lucide-react";
-import React from "react";
+import { useTranslations } from "next-intl";
 
-interface SecondSectionBoxInfo {
+interface ServicesCardInfo {
   icon: React.ReactNode;
-  text: string;
+  label: string;
 }
 
-const secondSectionBoxesData: SecondSectionBoxInfo[] = [
-  { text: "Инвестиции", icon: <MoneyIncomeOutlinedIcon /> },
-  { text: "Рейтинг МФО", icon: <AnalyticsIcon /> },
-  { text: "Автокредит", icon: <CarIcon /> },
-  { text: "Рефинанси рование", icon: <TurnIcon /> },
-  { text: "Займы без отказа", icon: <HandIcon /> },
-  { text: "Кредиты для бизнеса", icon: <PageIcon /> },
-
-  { text: "КАСКО", icon: <CarDoneIcon /> },
-  { text: "Банкротство", icon: <ManIcon /> },
-  { text: "Рейтинг банков", icon: <GraphIcon /> },
+const servicesData: ServicesCardInfo[] = [
+  { label: "Инвестиции", icon: <MoneyIncomeOutlinedIcon /> },
+  { label: "Рейтинг МФО", icon: <AnalyticsIcon /> },
+  { label: "Автокредит", icon: <CarIcon /> },
+  { label: "Рефинансирование", icon: <TurnIcon /> },
+  { label: "Займы без отказа", icon: <HandIcon /> },
+  { label: "Кредиты для бизнеса", icon: <PageIcon /> },
+  { label: "КАСКО", icon: <CarDoneIcon /> },
+  { label: "Банкротство", icon: <ManIcon /> },
+  { label: "Рейтинг банков", icon: <GraphIcon /> },
 ];
 
-export const SecondSectionBox: React.FC<SecondSectionBoxInfo> = ({
-  icon,
-  text,
-}) => {
+export const ServiceCard: React.FC<ServicesCardInfo> = ({ icon, label }) => {
   return (
-    <div className="homeSecondSectionBoxShaddow flex flex-col w-[147px] rounded-[10px] h-[144px] founded-[10px] items-center justify-center">
+    <div className="homeSecondSectionBoxShaddow flex flex-col w-[145px] rounded-[10px] h-[144px] items-center justify-center gap-2">
       {icon}
-      <h3 className="text-text text-[15px] font-medium">{text}</h3>
+      <h3 className="text-text text-[13px]  text-center font-medium">
+        {label}
+      </h3>
     </div>
   );
 };
 
-export const SecondSection = () => {
+export const ServicesSection = () => {
+  const t = useTranslations("servicesSection"); // for i18n support
+
   return (
-    <div className="flex py-12 flex-wrap gap-2">
-      {secondSectionBoxesData.map((boxData) => (
-        <SecondSectionBox {...boxData} />
+    <div className="flex py-12 flex-wrap gap-2 justify-center">
+      {servicesData.map((service, i) => (
+        <ServiceCard
+          key={i}
+          icon={service.icon}
+          label={t ? t(service.label) : service.label}
+        />
       ))}
     </div>
   );
