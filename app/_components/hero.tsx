@@ -16,7 +16,7 @@ const FirstBox = () => {
 
   return (
     <div className="bg-[#C6D5DF] rounded-[10px] w-1/2 h-[240px] p-5 heroBoxShaddow flex flex-col gap-2">
-      <div className="flex gap-1.5 items-end">
+      <div className="flex gap-1.5 items-center">
         <MoneyIcon />
         <h3 className="font-semibold leading-5 text-[#171717] text-[32px]">
           {t("deposits")}
@@ -34,7 +34,7 @@ const SecondBox = () => {
 
   return (
     <div className="bg-[#EDF2F5] pr-12 rounded-[10px] heroBoxShaddow w-1/2 h-[240px] px-3 flex flex-col gap-2 p-5">
-      <div className="flex gap-1.5  justify-end items-end">
+      <div className="flex gap-1.5  justify-end items-center">
         <HouseIcon />
         <h3 className="font-semibold leading-5 text-[#171717] text-[32px]">
           {t("mortgage")}
@@ -86,7 +86,7 @@ const FourthBox = () => {
   return (
     <div className="flex heroBoxShaddow rounded-[10px] w-[325px] h-full p-4 gap-1 relative heroFourthBoxGradient">
       <WalkingIcon />
-      <h3 className="text-text-normal leading-[26px] text-[24px] font-semibold">
+      <h3 className="text-text-normal leading-[26px] text-[24px] pt-2 font-semibold">
         {t("travelInsurance")}
       </h3>
       <img

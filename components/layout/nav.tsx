@@ -101,18 +101,18 @@ export const Navigation: React.FC<{ local: string }> = ({ local }) => {
   };
 
   return (
-    <div className="flex z-20 flex-col gap-6 p-4 max-w-[1440px] w-full">
+    <div className="flex z-20 flex-col gap-8 p-7 max-w-[1440px] w-full">
       <div className="flex gap-5 items-center justify-between">
         <div className="flex gap-5 items-center">
-          <div className="flex items-center gap-2">
+          {/* <div className="flex items-center gap-2">
             <LocationIcon />
             <p className="text-[#111111] text-[10px]">{t("moscow")}</p>
           </div>
           <div className="flex items-center gap-2">
             <AnalyticsIcon />
             <p className="text-[#111111] text-[10px]">{t("exchangeRates")}</p>
-          </div>
-          <div className="flex gap-3 items-center">
+          </div> */}
+          {/* <div className="flex gap-3 items-center">
             <p className="text-[#111111] text-[10px]">
               <span className="font-bold">USD</span>
               <span className="font-medium">88.72</span>
@@ -123,7 +123,7 @@ export const Navigation: React.FC<{ local: string }> = ({ local }) => {
               <span className="font-medium">96.44</span>
               <span className="font-medium text-[8px]">+012</span>
             </p>
-          </div>
+          </div> */}
         </div>
 
         <LanguageSwitcher currentLocale={local} />

@@ -116,7 +116,7 @@ export const NinethSection = () => {
   }) => (
     <div
       className={cn(
-        "flex flex-col gap-3.5 lightShadow h-fit rounded-[10px] p-6",
+        "flex flex-col gap-3.5 lightShadow h-[350px] rounded-[10px] p-6",
         className
       )}
     >
@@ -173,13 +173,13 @@ export const NinethSection = () => {
         ))}
       </div>
       <div className="flex gap-3.5 flex-wrap max-w-full">
-        {<Card className="w-[453px]" {...selectedTabItems[0]} />}
-        {<Card className="w-[453px]" {...selectedTabItems[1]} />}
-        {<Card className="w-[453px]" {...selectedTabItems[2]} />}
+        {<Card className="w-[453px] h-[290px]" {...selectedTabItems[0]} />}
+        {<Card className="w-[453px] h-[290px]" {...selectedTabItems[1]} />}
+        {<Card className="w-[453px] h-[290px]" {...selectedTabItems[2]} />}
         <BanksCard />
-        {<Card className="w-[912px]" {...selectedTabItems[4]} />}
-        {<Card className="w-[453px]" {...selectedTabItems[5]} />}
-        {<Card className="w-[595px]" {...selectedTabItems[6]} />}
+        {<Card className="w-[912px] h-fit" {...selectedTabItems[4]} />}
+        {<Card className="w-[453px] h-[280]" {...selectedTabItems[5]} />}
+        {<Card className="w-[595px] h-[280]" {...selectedTabItems[6]} />}
         <ReviewCard />
       </div>
     </div>

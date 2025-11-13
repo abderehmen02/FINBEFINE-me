@@ -32,7 +32,7 @@ const servicesData: ServicesCardInfo[] = [
 
 export const ServiceCard: React.FC<ServicesCardInfo> = ({ icon, label }) => {
   return (
-    <div className="homeSecondSectionBoxShaddow flex flex-col w-[145px] rounded-[10px] h-[144px] items-center justify-center gap-2">
+    <div className="homeSecondSectionBoxShaddow flex flex-col w-full rounded-[10px] h-[144px] items-center justify-center gap-2">
       {icon}
       <h3 className="text-text text-[13px]  text-center font-medium">
         {label}
@@ -45,7 +45,7 @@ export const ServicesSection = () => {
   const t = useTranslations("servicesSection"); // for i18n support
 
   return (
-    <div className="flex py-12 flex-wrap gap-2 justify-center">
+    <div className="flex py-12 gap-2 justify-center">
       {servicesData.map((service, i) => (
         <ServiceCard
           key={i}

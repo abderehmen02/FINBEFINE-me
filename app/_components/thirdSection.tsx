@@ -11,7 +11,7 @@ export const ThirdSection = () => {
       {thirdSectionImages.map((img) => (
         <img
           src={img}
-          className="w-[451px] lightShadow rounded-[10px] h-[280px]"
+          className="w-[451px] lightShadow object-cover object-center rounded-[10px] h-[280px]"
         />
       ))}
     </div>
