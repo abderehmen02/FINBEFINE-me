@@ -140,11 +140,11 @@ export const BankProductsSection = () => {
           className="w-full h-[45px] lightShadow"
           placeholder={t("banksSection.placeholder")}
         />
-        <div className="flex flex-wrap gap-3 py-3 max-w-[400px] w-full">
+        <div className="flex flex-wrap gap-3 py-3   lg:max-w-[400px] w-full">
           {banksLogos.map((logo, index) => (
             <div
               key={index}
-              className="w-[194px] lightShadow flex items-center justify-center h-[84px]"
+              className="w-full lg:w-[194px] lightShadow flex items-center justify-center h-[84px]"
             >
               {logo}
             </div>
@@ -160,9 +160,9 @@ export const BankProductsSection = () => {
   return (
     <div className="flex flex-col gap-5">
       <h3 className="text-[24px] font-semibold">{t("title")}</h3>
-      <div className="flex gap-2">
-        <div className="lightShadow rounded-[10px] w-[922px] px-5 py-2">
-          <div className="flex w-full gap-2 py-6">
+      <div className="flex gap-2 flex-col lg:flex-row">
+        <div className="lightShadow rounded-[10px] lg:w-[922px] px-5 py-2">
+          <div className="flex w-full flex-wrap  gap-2 py-6">
             {tabsData.map((tab) => (
               <div
                 key={tab.tab}

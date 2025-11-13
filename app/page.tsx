@@ -15,7 +15,7 @@ export default function HomePage() {
   return (
     <div className="flex relative max-w-[1440px] flex-col py-9 px-2">
       <Hero />
-      {/* <ServicesSection />
+      <ServicesSection />
       <ThirdSection />
       <ExchangeRatesSection />
       <FifthSection />
@@ -24,7 +24,7 @@ export default function HomePage() {
       <NinethSection />
       <TenSection />
       <ElevenSection />
-      <TwelevSection /> */}
+      <TwelevSection />
     </div>
   );
 }

@@ -7,11 +7,11 @@ const thirdSectionImages = [
 
 export const ThirdSection = () => {
   return (
-    <div className="flex gap-6 flex-wrap ">
+    <div className="flex gap-6 px-2 flex-wrap ">
       {thirdSectionImages.map((img) => (
         <img
           src={img}
-          className="w-[451px] lightShadow object-cover object-center rounded-[10px] h-[280px]"
+          className=" w-full lg:w-[451px] lightShadow object-cover object-center rounded-[10px] h-[280px]"
         />
       ))}
     </div>

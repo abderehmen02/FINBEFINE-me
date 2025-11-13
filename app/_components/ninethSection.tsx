@@ -74,7 +74,7 @@ export const NinethSection = () => {
     ) || [];
 
   const BanksCard = () => (
-    <div className="flex flex-col rounded-[10px] gap-8 w-[453px] h-[231px] py-4 bg-primary">
+    <div className="flex flex-col rounded-[10px] gap-8 w-full lg:w-[453px] h-[231px] py-4 bg-primary">
       <div className="flex justify-between w-full px-6 py-4">
         <div className="flex text-white flex-col gap-2">
           <h3 className="text-xl">
@@ -97,7 +97,7 @@ export const NinethSection = () => {
   );
 
   const ReviewCard = () => (
-    <div className="flex lightShadow flex-col w-[299px] justify-between py-7 h-[244px] rounded-[10px] p-4">
+    <div className="flex lightShadow flex-col w-full lg:w-[299px] justify-between py-7 h-[244px] rounded-[10px] p-4">
       <h3 className="text-text text-[24px] font-semibold">
         {t("reviewCard.title")}
       </h3>
@@ -116,7 +116,7 @@ export const NinethSection = () => {
   }) => (
     <div
       className={cn(
-        "flex flex-col gap-3.5 lightShadow h-[350px] rounded-[10px] p-6",
+        "flex flex-col gap-3.5 lightShadow rounded-[10px] p-6",
         className
       )}
     >
@@ -155,7 +155,7 @@ export const NinethSection = () => {
   return (
     <div className="flex flex-col py-7">
       <h3 className="text-[24px] font-semibold">{t("title")}</h3>
-      <div className="flex gap-2 py-6">
+      <div className="flex flex-wrap gap-2 py-6">
         {tabsData.map((tab) => (
           <div
             key={tab.tab}
@@ -173,13 +173,43 @@ export const NinethSection = () => {
         ))}
       </div>
       <div className="flex gap-3.5 flex-wrap max-w-full">
-        {<Card className="w-[453px] h-[290px]" {...selectedTabItems[0]} />}
-        {<Card className="w-[453px] h-[290px]" {...selectedTabItems[1]} />}
-        {<Card className="w-[453px] h-[290px]" {...selectedTabItems[2]} />}
+        {
+          <Card
+            className=" w-full lg:w-[453px] lg:h-[290px]"
+            {...selectedTabItems[0]}
+          />
+        }
+        {
+          <Card
+            className=" w-full lg:w-[453px] lg:h-[290px]"
+            {...selectedTabItems[1]}
+          />
+        }
+        {
+          <Card
+            className=" w-full lg:w-[453px] lg:h-[290px]"
+            {...selectedTabItems[2]}
+          />
+        }
         <BanksCard />
-        {<Card className="w-[912px] h-fit" {...selectedTabItems[4]} />}
-        {<Card className="w-[453px] h-[280]" {...selectedTabItems[5]} />}
-        {<Card className="w-[595px] h-[280]" {...selectedTabItems[6]} />}
+        {
+          <Card
+            className="w-full lg:w-[912px] h-fit "
+            {...selectedTabItems[4]}
+          />
+        }
+        {
+          <Card
+            className="w-full lg:w-[453px]   lg:h-[280]"
+            {...selectedTabItems[5]}
+          />
+        }
+        {
+          <Card
+            className="w-full lg:w-[595px] lg:h-[280]"
+            {...selectedTabItems[6]}
+          />
+        }
         <ReviewCard />
       </div>
     </div>

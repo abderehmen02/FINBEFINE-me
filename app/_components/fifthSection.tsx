@@ -90,7 +90,7 @@ export const FifthSection = () => {
   return (
     <div className="flex flex-col ">
       <h3 className="text-[24px] font-semibold">{t("title")}</h3>
-      <div className="flex gap-2 py-6">
+      <div className="flex flex-wrap w-full   gap-2 py-6">
         {tabsData.map((tab) => (
           <div
             key={tab.tab}
@@ -107,13 +107,13 @@ export const FifthSection = () => {
           </div>
         ))}
       </div>
-      <div className="flex gap-2">
+      <div className="flex flex-col w-full items-center gap-6 lg:gap-2 lg:flex-row ">
         {tabsData
           .find((tab) => tab.tab === selectedTab)
           ?.items.map((itemInfo, i) => (
             <div
               key={i}
-              className="flex flex-col max-w-[332px] relative items-center"
+              className="flex flex-col w-full  max-w-[350px] px-2  relative items-center"
             >
               <div className="bg-[#10A26F] px-6 py-3 text-center text-white flex items-center justify-center rounded-[5px] translate-y-4 w-[290px] h-[54px] z-20">
                 {itemInfo.topText}
@@ -121,7 +121,7 @@ export const FifthSection = () => {
               <div className="bg-[#F2F2F2] flex justify-center w-[332px] h-[180px] z-10 rounded-[10px] items-center">
                 {itemInfo.icon}
               </div>
-              <div className="flex flex-col ">
+              <div className="flex flex-col w-full">
                 <div className="py-2 border-b min-h-[70px] border-b-[#EEEEEE]">
                   <p className="font-medium">{itemInfo.description}</p>
                 </div>

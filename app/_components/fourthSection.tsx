@@ -58,7 +58,7 @@ const ExchangeRatesTable = () => {
     <div className="flex flex-col p-6 standardShaddow gap-1">
       <div className="flex gap-2 font-semibold text-[24px] items-center">
         <AnalyticsIcon />
-        <h3>
+        <h3 className="leading-tight">
           {t("title")} <span className="text-primary">{t("city")}</span>
         </h3>
       </div>
@@ -70,7 +70,7 @@ const ExchangeRatesTable = () => {
 
             <th className="w-1/5 h-10 py-5 font-medium text-left px-2">
               <div className="flex flex-col">
-                <h3 className="font-semibold leading-[21px]">
+                <h3 className="text-sm lg:text-base font-semibold leading-[21px]">
                   {t("headers.bestRates")}
                 </h3>
                 <p className="text-sm leading-[21px]">{t("headers.buy")}</p>
@@ -107,9 +107,11 @@ const ExchangeRatesTable = () => {
           {exchangeRateRows.map((row, i) => (
             <tr key={i} className="w-full relative">
               <td className="w-1/5 py-4 h-10">
-                <div className="flex gap-1 items-center justify-center">
+                <div className="flex gap-1 px-1 lg:px-0 items-center justify-center">
                   <img src={row.flagImg} alt={row.currency} />
-                  <p className="text-primary font-semibold">{row.currency}</p>
+                  <p className="text-primary hidden lg:block  font-semibold">
+                    {row.currency}
+                  </p>
                 </div>
               </td>
 
@@ -121,10 +123,10 @@ const ExchangeRatesTable = () => {
               ].map((col, j) => (
                 <td key={j} className="w-1/5 h-10 relative">
                   <div className="flex flex-col gap-1">
-                    <h3 className="text-text text-[20px] leading-[17px]">
+                    <h3 className="text-text  text-xs lg:text-[20px] leading-[17px]">
                       {col.title}
                     </h3>
-                    <p className="text-primary leading-[17px]">
+                    <p className="text-primary text-xs lg:text-base lg:leading-[17px]">
                       {col.description}
                     </p>
                   </div>
@@ -172,7 +174,7 @@ const CurrencyConverter = () => {
 };
 
 export const ExchangeRatesSection = () => (
-  <div className="flex gap-3 py-14">
+  <div className="flex flex-col lg:flex-row gap-3 py-14">
     <ExchangeRatesTable />
     <CurrencyConverter />
   </div>

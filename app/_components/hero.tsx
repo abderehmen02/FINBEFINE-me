@@ -131,7 +131,7 @@ const SixthBox = () => {
 
 export const Hero = () => {
   return (
-    <div className="flex flex-col lg:flex-row gap-3 relative h-[588px]">
+    <div className="flex flex-col lg:flex-row gap-3 relative lg:h-[588px]">
       <div className="flex flex-col gap-3 relative">
         <div className="flex flex-col lg:flex-row h-fit relative gap-3">
           <FirstBox />

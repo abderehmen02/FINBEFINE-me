@@ -8,8 +8,8 @@ const FirstTabUI = () => {
   const t = useTranslations("financeNews");
 
   return (
-    <div className="flex gap-3 p-3 justify-between py-6 lightShadow w-full">
-      <div className="flex flex-col max-w-[496px] px-9 gap-2.5">
+    <div className="flex gap-3 items-center  lg:items-start flex-col lg:flex-row  p-3 justify-between py-6 lightShadow w-full">
+      <div className="flex flex-col max-w-[496px] px-2.5 lg:px-9 gap-2.5">
         <h3 className="text-[32px] text-text font-semibold">
           {t("newsFeedTitle")}
         </h3>
@@ -63,7 +63,7 @@ const FirstTabUI = () => {
         </div>
       </div>
 
-      <div className="flex flex-col w-[300px] h-full items-center justify-center">
+      <div className="flex flex-col  w-[300px] h-full items-center justify-center">
         <div className="w-full h-[420px] relative">
           <div className="bg-[#5279F4] absolute top-0 left-1/2 -translate-x-1/2 opacity-50 w-[231px] h-[296px] rounded-[10px]" />
           <div className="bg-[#5279F4] absolute top-4 left-1/2 -translate-x-1/2 w-[264px] h-[296px] rounded-[10px]" />
@@ -73,7 +73,7 @@ const FirstTabUI = () => {
           />
         </div>
 
-        <div className="flex py-4 w-full items-center justify-between">
+        <div className="flex py-4 w-full  items-center justify-between">
           <LeftArrow />
           <div className="flex items-center gap-3">
             <h3>1</h3>
@@ -107,7 +107,7 @@ const ElevenSection = () => {
 
       <div className="flex gap-2">
         <div className="rounded-[10px] w-full px-5 py-2">
-          <div className="flex w-full gap-2 py-6">
+          <div className="flex w-full flex-wrap gap-2 py-6">
             {tabsData.map((tab) => (
               <div
                 key={tab.tab}

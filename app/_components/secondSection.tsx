@@ -45,7 +45,7 @@ export const ServicesSection = () => {
   const t = useTranslations("servicesSection"); // for i18n support
 
   return (
-    <div className="flex py-12 gap-2 justify-center">
+    <div className="flex py-12 gap-2 flex-col lg:flex-row justify-center">
       {servicesData.map((service, i) => (
         <ServiceCard
           key={i}

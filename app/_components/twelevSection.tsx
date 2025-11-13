@@ -5,8 +5,8 @@ export const TwelevSection = () => {
   const t = useTranslations("twelveSection");
 
   return (
-    <div className="flex gap-5 py-7">
-      <div className="min-w-[687px] rounded-[10px] flex flex-col items-center justify-center gap-3 pinkLinear h-[479px]">
+    <div className="flex gap-5 py-7 flex-col  lg:flex-row px-1.5">
+      <div className="lg:min-w-[687px] rounded-[10px] flex flex-col items-center justify-center gap-3 pinkLinear h-[479px]">
         <div className="bg-white items-center justify-center rounded-[20px] text-xl w-[282px] h-[33px]">
           <h3 className="text-xl font-bold w-full text-center">
             FINBE
