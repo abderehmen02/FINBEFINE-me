@@ -1,21 +1,15 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import {
-  AccountIcon,
-  FiveIcon,
-  LocationIcon,
-  MessagingIcon,
-} from "@/icons/nenethSection";
-import { cn } from "@/lib/tailwind";
-import { JSX, useMemo, useState } from "react";
-import { useTranslations } from "next-intl";
-import {
   BlueRedCircle,
   DoneFlag,
   GreenLinesFlag,
   RedAFlag,
   TYellowBgFlag,
 } from "@/icons/flags/tableFlags";
+import { cn } from "@/lib/tailwind";
+import { useTranslations } from "next-intl";
+import { JSX, useState } from "react";
 
 type RowInfo = {
   firstColumn: {
